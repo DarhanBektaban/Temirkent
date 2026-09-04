@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temirkent | Bastapqy bet</title>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #0284c7;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #0f172a;
+            --muted: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: var(--card-bg);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--muted);
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            background: #e0f2fe;
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.3rem 0.8rem;
+            border-radius: 9999px;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.6rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+        }
+
+        .btn-primary:hover {
+            background: #0369a1;
+        }
+
+        .btn-secondary {
+            background: var(--card-bg);
+            color: var(--primary);
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn-secondary:hover {
+            background: #f1f5f9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 2rem auto 4rem auto;
+            padding: 0 1.5rem;
+            width: 100%;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        footer {
+            border-top: 1px solid #e2e8f0;
+            background: var(--card-bg);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">TEMIR<span>KENT</span></div>
+        <nav>
+            <a href="#about">Biz turaly</a>
+            <a href="#projects">Zhobalar</a>
+            <a href="#contact">Bajlanys</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <span class="badge">temirkent.com</span>
+        <h1>Zhana múmkindikter men zhanalyqtar keńistigi</h1>
+        <p>Bul jerde aldaǵy ýaqytta Temirkent jobasynyń negizgi aqparattary, resýrstary men qyzmetter ornalasady.</p>
+        
+        <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">Tanysu</a>
+            <a href="#contact" class="btn btn-secondary">Habarlasý</a>
+        </div>
+    </main>
+
+    <section class="features" id="projects">
+        <div class="card">
+            <h3>Negizgi baghyt</h3>
+            <p>Zhobanyń basty maqsaty men keleshek strategijasyn baıandaıtyn bólim.</p>
+        </div>
+        <div class="card">
+            <h3>Aqparat & Qorlar</h3>
+            <p>Qoldanushylar men oqyrmandarǵa arnalǵan paıdaly qujattar, siltemeler jáne quraldar.</p>
+        </div>
+        <div class="card">
+            <h3>Bajlanys & Qoldau</h3>
+            <p>Suranystar, usynystar men keri bajlanys qabyldaý tetikteri.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 Temirkent.com. Barlyq quqyqtar qorǵalǵan.</p>
+    </footer>
+
+</body>
+</html>
